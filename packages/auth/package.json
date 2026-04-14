@@ -1,0 +1,39 @@
+{
+  "name": "@repo/auth",
+  "type": "module",
+  "exports": {
+    "./client": {
+      "import": "./dist/client/index.js",
+      "types": "./dist/client/index.d.ts"
+    },
+    "./server": {
+      "import": "./dist/server/auth.js",
+      "types": "./dist/server/auth.d.ts"
+    },
+    "./middleware": {
+      "import": "./dist/middleware/middleware.js",
+      "types": "./dist/middleware/middleware.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "devDependencies": {
+    "@repo/db": "*",
+    "@repo/typescript-config": "*",
+    "@types/bun": "latest",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
+  "dependencies": {
+    "@getbrevo/brevo": "^5.0.4",
+    "better-auth": "^1.6.2",
+    "dotenv": "^17.4.2"
+  }
+}
