@@ -33,7 +33,7 @@ export const auth = betterAuth({
                 text: `Click the link to verify your email: ${verificationUrl}`,
                 html: `
                     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-                        <h2 style="color: #333;">Welcome to LastBench!</h2>
+                        <h2 style="color: #333;">Welcome to Disco-ERP!</h2>
                         <p style="color: #666; font-size: 16px;">
                             Thanks for signing up! Please verify your email address to get started.
                         </p>
@@ -75,11 +75,11 @@ export const auth = betterAuth({
 
     // to make cookies work across subdomains
     advanced: {
-        cookiePrefix: "lastbench",
+        cookiePrefix: "disco-erp",
         useSecureCookies: process.env.NODE_ENV === "production",
         crossSubDomainCookies: {
             enabled: true,
-            domain: process.env.NODE_ENV === "production" ? ".lastbench.com" : "localhost",
+            domain: process.env.NODE_ENV === "production" ? ".disco-erp.com" : "localhost",
         }
     },
 
@@ -95,7 +95,7 @@ export const auth = betterAuth({
                     text: `Click the link to verify your email: ${verificationUrl}`,
                     html: `
                         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-                            <h2 style="color: #333;">Welcome to LastBench!</h2>
+                            <h2 style="color: #333;">Welcome to Disco-ERP!</h2>
                             <p style="color: #666; font-size: 16px;">
                                 Thanks for signing up! Please verify your email address to get started.
                             </p>

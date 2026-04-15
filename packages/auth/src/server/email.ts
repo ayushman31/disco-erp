@@ -19,7 +19,7 @@ export async function sendEmail({
 }): Promise<{ success: boolean; result?: any; error?: any }> {
   try {
     const result = await client.transactionalEmails.sendTransacEmail({
-      sender: { email: "singhayushman100@gmail.com", name: "LastBench" },
+      sender: { email: "singhayushman100@gmail.com", name: "Disco-ERP" },
       to: [{ email: to }],
       subject,
       textContent: text,
